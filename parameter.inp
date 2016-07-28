@@ -1,0 +1,56 @@
+&HYDROGEN  cnuclear =2, lang = 0, lmax=5                  &END
+&FEDVRDIS  no_gp = 20, no_fe = 20, 
+           bound_start = 0.0, bound_end = 1.0, bslope = 2.50   &END
+&LASERPAR						      &END
+
+
+! HYDROGEN :
+  cnuclear : Nuclear charge;
+  lang     : Angular momentum (the smallest one) .
+  lmax     : Angular momentum (the max value).
+! FEDVRDIS :
+  no_gp       : No. of Gauss-Lobotto points within each element;
+  no_fe       : No. of finite-elements. 
+  bound_start : The left boundary of the first element; 
+                It usually takes 0.
+  bound_end   : The right boundary of the first element;
+                The above two parameters defines the first element.
+  bslop       : The slope parameter in the exponential function to 
+                define other elements. Here the exponential increasing 
+                elements is used.
+
+Energy
+H:
+ -1.250000000000016E-01
+ -5.555555555555453E-02
+ -3.124999999999782E-02
+ -1.999999997069004E-02
+ -1.388867496174209E-02
+ -1.015994247746133E-02
+ -7.120163777884506E-03
+ -3.394419943180528E-03
+  1.260272603757287E-03
+  6.769125018763595E-03
+
+He+
+ -2.000000000000016E+00
+ -5.000000000000069E-01
+ -2.222222222222184E-01
+ -1.249999999999990E-01
+ -8.000000000000042E-02
+ -5.555555555555371E-02
+ -4.081632653059264E-02
+ -3.124999964143488E-02
+ -2.469096307924405E-02
+ -1.995760356483518E-02
+
+He (effect charge=1.34191430426834633991)(bs=4.5,Ne140Ng10)
+  1       -0.9003670000       -0.9003670216       -0.0000000239
+  2       -0.2250917500       -0.2250917554       -0.0000000239
+  3       -0.1000407778       -0.1000407860       -0.0000000819
+  4       -0.0562729375       -0.0562729388       -0.0000000239
+  5       -0.0360146800       -0.0360146835       -0.0000000984
+  6       -0.0250101944       -0.0250101965       -0.0000000819
+  7       -0.0183748367       -0.0183748361        0.0000000360
+  8       -0.0140682344       -0.0140682347       -0.0000000239
+  9       -0.0111156420       -0.0111156423       -0.0000000260
